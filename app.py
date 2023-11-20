@@ -1,4 +1,3 @@
-import openai
 import streamlit as st
 from dotenv import load_dotenv
 import pickle
@@ -11,8 +10,6 @@ from langchain.llms import OpenAI
 from langchain.chains.question_answering import load_qa_chain
 from langchain.callbacks import get_openai_callback
 import os
-
-openai.api_key = "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"
 
 # Sidebar contents
 with st.sidebar:
@@ -28,7 +25,7 @@ with st.sidebar:
     """
     )
     add_vertical_space(5)
-    st.write("Made with ❤️ by [Prompt Engineer](https://youtube.com/@engineerprompt)")
+    st.write("Made with ❤️ by [Umer](https://umerkhan.org/)")
 
 load_dotenv()
 
